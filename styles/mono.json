@@ -1,0 +1,41 @@
+{
+	"version": 2,
+	"title": "Mono",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#030303",
+					"name": "Accent",
+					"slug": "primary"
+				},
+				{
+					"color": "#1a1a1a",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#131313",
+					"name": "Text",
+					"slug": "foreground"
+				},
+				{
+					"color": "#b3b3b3",
+					"name": "Text (Lighter)",
+					"slug": "foreground-light"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#F0F0F0",
+					"name": "Backdrop",
+					"slug": "tertiary"
+				}
+			]
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+{
+	"version": 2,
+	"title": "Dark",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#40aced",
+					"name": "Accent",
+					"slug": "primary"
+				},
+				{
+					"color": "#fafafa",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#fcfcfc",
+					"name": "Text",
+					"slug": "foreground"
+				},
+				{
+					"color": "#eaeaea",
+					"name": "Text (Lighter)",
+					"slug": "foreground-light"
+				},
+				{
+					"color": "#131313",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#282829",
+					"name": "Backdrop",
+					"slug": "tertiary"
+				}
+			]
+		}
+	}
+}
+
