@@ -137,6 +137,16 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/avatar": {
+				"border": {
+					"radius": "0.25rem"
+				},
+				"spacing": {
+					"margin": {
+						"top": "0.5em"
+					}
+				}
+			},
 			"core/button": {
 				"typography": {
 					"fontStyle": "normal",
@@ -180,9 +190,17 @@
 				}
 			},
 			"core/comment-author-name": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|foreground"
+						}
+					}
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)",
-					"fontWeight": "700"
+					"fontWeight": "700",
+					"textTransform": "uppercase"
 				}
 			},
 			"core/comment-date": {
@@ -192,12 +210,14 @@
 			},
 			"core/comment-edit-link": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"textTransform": "uppercase"
 				}
 			},
 			"core/comment-reply-link": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var:preset|font-size|small",
+					"textTransform": "uppercase"
 				}
 			},
 			"core/gallery": {
@@ -233,6 +253,12 @@
 					}
 				}
 			},
+			"core/post-author": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"textTransform": "uppercase"
+				}
+			},
 			"core/post-date": {
 				"color": {
 					"text": "var(--wp--preset--color--foreground)"
@@ -244,13 +270,16 @@
 								"textDecoration": "underline"
 							}
 						},
+						"color": {
+							"text": "var:preset|color|foreground"
+						},
 						"typography": {
 							"textDecoration": "none"
 						}
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var:preset|font-size|small"
 				}
 			},
 			"core/post-title": {
@@ -260,6 +289,9 @@
 							"typography": {
 								"textDecoration": "underline"
 							}
+						},
+						"color": {
+							"text": "var:preset|color|foreground"
 						},
 						"typography": {
 							"textDecoration": "none"
