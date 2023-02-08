@@ -1,18 +1,24 @@
 === Outline ===
 Contributors: Peter Kiss
-Requires at least: 5.8
-Tested up to: 5.9
-Requires PHP: 5.7
+Requires at least: 6.1
+Tested up to: 6.1
+Requires PHP: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A clean, minimalistic theme with a handwritten and handdrawn style.
+A clean, minimalistic theme with a handwritten and hand-drawn style.
+
+=== Notes, FAQ ===
+
+The theme is fresh off the press and might have some rough edges, please report any issues in the support forum or via GitHub. Similarly, if you'd like to see support for a plugin or some feature, send a request via those channels.
+
+Language support: The theme is built around the Gaegu font, which does not cover extended alphabets. Please check first if all characters in your language are supported.
 
 == Changelog ==
 
-= 0.0.1 =
+= 1.0.0 =
 * Initial release
 
 == Copyright ==
@@ -29,3 +35,18 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
+
+== Resources ==
+
+This theme bundles the following third-party resources:
+
+Gaegu from Google Fonts, Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+https://fonts.google.com/specimen/Gaegu
+
+Cutive Mono from Google Fonts, Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+https://fonts.google.com/specimen/Cutive+Mono
+
+Sample content from Wikipedia for theme screenshot
+License: Creative Commons Attribution-ShareAlike License 3.0
+License URL: https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License
+Source: https://en.wikipedia.org/wiki/Quantum_vacuum_state

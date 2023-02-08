@@ -19,11 +19,6 @@
 					"slug": "foreground"
 				},
 				{
-					"color": "#b3b3b3",
-					"name": "Text (Lighter)",
-					"slug": "foreground-light"
-				},
-				{
 					"color": "#ffffff",
 					"name": "Background",
 					"slug": "background"
