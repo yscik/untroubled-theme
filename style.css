@@ -1,17 +1,17 @@
 /*
-Theme Name: Outline
-Theme URI: https://github.com/yscik/outline-theme
+Theme Name: Untroubled
+Theme URI: https://github.com/yscik/untroubled-theme
 Author: Peter Kiss
 Author URI:
 Description: A clean, minimalistic theme with a handwritten and hand-drawn style.
-Requires at least: 5.8
-Tested up to: 5.9
-Requires PHP: 5.7
-Version: 0.0.1
+Requires at least: 6.1
+Tested up to: 6.1
+Requires PHP: 7.1
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template:
-Text Domain: outline
+Text Domain: untroubled
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks, blog, education
 */
 
@@ -61,7 +61,7 @@ p a:not(.wp-block-button__link):hover:after, .entry-content a:not(.wp-block-butt
 	box-shadow: 0 0 0 4px var(--wp--preset--color--background);
 }
 
-.entry-content a.wp-block-button__link:after, .wp-site-blocks figure a::after {
+.entry-content a.wp-block-button__link:after, .wp-site-blocks figure a::after, .wp-site-blocks a.button {
 	content: none;
 }
 

@@ -1,39 +1,38 @@
 <?php
 /**
- * Outline theme functions and definitions
+ * Untroubled theme functions and definitions
  *
- * @package Outline_Theme
+ * @package Untroubled_Theme
  * @since 1.0
  */
 
-namespace Outline_Theme;
+namespace Untroubled_Theme;
 
 /**
  * Set up theme supports.
  */
-function outline_support() {
+function untroubled_support() {
 
 	// Enqueue editor styles.
 	add_editor_style( 'style.css' );
 
 	// Make theme available for translation.
-	load_theme_textdomain( 'outline-theme' );
+	load_theme_textdomain( 'untroubled' );
 }
-
 
 /**
  * Enqueue styles.
  */
-function outline_styles() {
+function untroubled_styles() {
 
 	wp_register_style(
-		'outline-theme-style',
+		'untroubled-theme-style',
 		get_stylesheet_directory_uri() . '/style.css',
 		array(),
 		wp_get_theme()->get( 'Version' )
 	);
 
-	wp_enqueue_style( 'outline-theme-style' );
+	wp_enqueue_style( 'untroubled-theme-style' );
 
 }
 
@@ -47,10 +46,10 @@ const MENU_ICON = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 /**
  * Replace Navigation block menu icon.
  */
-function outline_render_block_navigation( $content, $block ) {
+function untroubled_render_block_navigation( $content, $block ) {
 	return preg_replace( '/<button(.*)><svg.*><\/button>/', '<button$1>' . MENU_ICON . '</button>', $content, 1 );
 }
 
-add_action( 'after_setup_theme', __NAMESPACE__ . '\outline_support' );
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\outline_styles' );
-add_filter( 'render_block_core/navigation', __NAMESPACE__ . '\outline_render_block_navigation', 10, 2 );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\untroubled_support' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\untroubled_styles' );
+add_filter( 'render_block_core/navigation', __NAMESPACE__ . '\untroubled_render_block_navigation', 10, 2 );

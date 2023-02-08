@@ -1,4 +1,4 @@
-=== Outline ===
+=== Untroubled ===
 Contributors: Peter Kiss
 Requires at least: 6.1
 Tested up to: 6.1
@@ -23,8 +23,8 @@ Language support: The theme is built around the Gaegu font, which does not cover
 
 == Copyright ==
 
-Outline WordPress Theme, (C) 2023 Peter Kiss
-Outline is distributed under the terms of the GNU GPL.
+Untroubled WordPress Theme, (C) 2023 Peter Kiss
+Untroubled is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -46,7 +46,5 @@ https://fonts.google.com/specimen/Gaegu
 Cutive Mono from Google Fonts, Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 https://fonts.google.com/specimen/Cutive+Mono
 
-Sample content from Wikipedia for theme screenshot
-License: Creative Commons Attribution-ShareAlike License 3.0
-License URL: https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License
+Sample content from Wikipedia for theme screenshot, Creative Commons Attribution-ShareAlike License 3.0 (https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
 Source: https://en.wikipedia.org/wiki/Quantum_vacuum_state
