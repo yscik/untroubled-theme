@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Comments
- * slug: outline/comments
+ * slug: untroubled/comments
  * inserter: no
  */
 
