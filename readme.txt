@@ -10,8 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A clean, minimalistic theme with a handwritten and hand-drawn style.
 
-=== Notes, FAQ ===
-
 The theme is fresh off the press and might have some rough edges, please report any issues in the support forum or via GitHub. Similarly, if you'd like to see support for a plugin or some feature, send a request via those channels.
 
 Language support: The theme is built around the Gaegu font, which does not cover extended alphabets. Please check first if all characters in your language are supported.
