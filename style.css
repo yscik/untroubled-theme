@@ -65,13 +65,18 @@ p a:not(.wp-block-button__link):hover:after, .entry-content a:not(.wp-block-butt
 	content: none;
 }
 
-.wp-block-code::selection {
+.wp-block-code ::selection {
 	background-color: var(--wp--preset--color--background);
 	color: var(--wp--preset--color--foreground);
 }
 
 /* endregion */
 /* region * * * * * * * * *                        Inputs and tables                         * * * * * * * * * * * * */
+
+.wp-site-blocks *
+{
+	accent-color: var(--wp--preset--color--primary);
+}
 
 .wp-site-blocks input[type="text"],
 .wp-site-blocks input[type="email"],
@@ -105,7 +110,7 @@ p a:not(.wp-block-button__link):hover:after, .entry-content a:not(.wp-block-butt
 	border-radius: 2px;
 }
 
-.wp-site-blocks *:focus-visible, .wp-block-search__inside-wrapper:focus-within
+.wp-site-blocks *:focus-visible, .wp-block-search__inside-wrapper:focus-within, .skip-link.screen-reader-text:focus
 {
 	outline: 2px dashed var(--wp--preset--color--primary);
 	outline-offset: 2px;
@@ -120,6 +125,8 @@ p a:not(.wp-block-button__link):hover:after, .entry-content a:not(.wp-block-butt
 
 .wp-block-search__inside-wrapper .wp-block-search__button {
 	padding: 0.2em 0.5em 0.2em 0.8em;
+	line-height: 1.5;
+	margin: 3px;
 }
 
 /* endregion */
@@ -174,20 +181,6 @@ pre {
 	border-color: var(--wp--preset--color--secondary);
 }
 
-.wp-site-blocks button,
-.wp-element-button,
-.wp-site-blocks .button,
-.wp-site-blocks input[type="button"],
-.wp-site-blocks input[type="submit"],
-.wp-site-blocks input[type="reset"],
-.wp-site-blocks ::file-selector-button,
-.wp-block-button > .wp-block-button__link
-{
-	border-radius: 0.25rem;
-	padding: 0.35em 1.2em;
-	-webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='605' height='30' fill='none' viewBox='0 0 605 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M256.48 2.13c-9.56.22-19.9-.24-26.36-.24-12.25 0-20.42.44-38.12-.14-14.42.42-17.29.02-31.75 0-7.52-.02-16.58.2-24.12.14-4.65-.04-12.57-.36-17.2-.14-7.97.37-17.4-.24-25.33.14-6.34.3-12.43.28-18.77.5-5.06.18-18.27-.15-18.27-.15l-11.82-.1s-8.47.15-12.9-.1c-2.23-.13-10.75-.09-10.75-.09s-10.19.22-13.75.2c-4.17-.04-.92-.08-5.09-.11-.04 2.16-.17 5.14.34 7.29.87 3.7-.35 8.1.52 11.78.7 2.95.27 4.2-.06 7.28l8.2.06c3.57.02 15.14-.41 15.14-.41s9.16.29 12.06.1c5.03 0 8.93-.1 8.93-.1l17.2.29s7.52 0 12.4.06c6.41.08 11.7-.27 21.37-.27 9.4.21 16.87.27 24.85-.1 4.62-.22 14.1-.04 18.75 0 7.54.06 12.93-.29 20.45-.27 14.46.02 17.84.6 32.27.17 18 0 24.76-.33 37.6-.03 6.44.15 14.96 1.1 24.63.6.04-2.16.61-4.5.1-6.66-.87-3.7.36-8.1-.52-11.78-.7-2.95.54-4.76 0-7.7'/%3e%3cpath fill='black' d='M2.23 2.5H602.3v25.8H2.23z'/%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M603.46 27.92c-5.69-.03-1.87.28-7.56.25-4.85-.03-18.75.19-18.75.19s-11.62.04-14.65-.09c-6.05-.25-17.59-.1-17.59-.1l-16.12-.1s-18-.33-24.9-.15c-8.64.22-16.95.2-25.6.5-10.81.38-23.66-.23-34.54.14-6.3.22-17.1-.1-23.44-.14-10.27-.06-22.62.16-32.88.14-19.71-.02-23.62-.42-43.29 0-24.12-.58-35.26-.14-51.96-.14-8.8 0-23.27-.5-36.46 0m.52-.46c-.73-2.94.95-4.75 0-7.7-1.2-3.69.48-8.08-.72-11.78a18.4 18.4 0 0 1-.76-6.35c13.36 0 25.7.14 34.49.3 17.5.3 26.71-.04 51.26-.04 19.67-.42 24.28.15 44 .17 10.25.02 17.6-.32 27.88-.26 6.34.03 19.25.21 25.56 0a646.4 646.4 0 0 1 33.87-.11c13.2 0 20.4-.35 29.14-.27 6.65.06 16.9.06 16.9.06l23.46.3s5.31-.11 12.16-.11c3.96-.19 16.45.1 16.45.1s15.78-.43 20.63-.4l11.19.05c-.46 3.08-1.03 4.33-.08 7.28 1.19 3.69-.48 8.08.71 11.78.7 2.15.06 5.13 0 7.3'/%3e%3c/svg%3e") no-clip top left / auto 100%;
-}
-
 .wp-site-blocks .button,
 .wp-site-blocks input[type="button"],
 .wp-site-blocks input[type="submit"],
@@ -209,6 +202,41 @@ pre {
 	font-style: normal;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+.wp-site-blocks button,
+.wp-element-button,
+.wp-site-blocks .button,
+.wp-site-blocks input[type="button"],
+.wp-site-blocks input[type="submit"],
+.wp-site-blocks input[type="reset"],
+.wp-site-blocks ::file-selector-button,
+.wp-block-button > .wp-block-button__link
+{
+	border-radius: 0.25rem;
+	padding: 0.35em 1.2em;
+
+	--mask-url: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='605' height='30' fill='none' viewBox='0 0 605 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M256.48 2.13c-9.56.22-19.9-.24-26.36-.24-12.25 0-20.42.44-38.12-.14-14.42.42-17.29.02-31.75 0-7.52-.02-16.58.2-24.12.14-4.65-.04-12.57-.36-17.2-.14-7.97.37-17.4-.24-25.33.14-6.34.3-12.43.28-18.77.5-5.06.18-18.27-.15-18.27-.15l-11.82-.1s-8.47.15-12.9-.1c-2.23-.13-10.75-.09-10.75-.09s-10.19.22-13.75.2c-4.17-.04-.92-.08-5.09-.11-.04 2.16-.17 5.14.34 7.29.87 3.7-.35 8.1.52 11.78.7 2.95.27 4.2-.06 7.28l8.2.06c3.57.02 15.14-.41 15.14-.41s9.16.29 12.06.1c5.03 0 8.93-.1 8.93-.1l17.2.29s7.52 0 12.4.06c6.41.08 11.7-.27 21.37-.27 9.4.21 16.87.27 24.85-.1 4.62-.22 14.1-.04 18.75 0 7.54.06 12.93-.29 20.45-.27 14.46.02 17.84.6 32.27.17 18 0 24.76-.33 37.6-.03 6.44.15 14.96 1.1 24.63.6.04-2.16.61-4.5.1-6.66-.87-3.7.36-8.1-.52-11.78-.7-2.95.54-4.76 0-7.7'/%3e%3cpath fill='black' d='M3 2h599v26H3z'/%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M603.46 27.92c-5.69-.03-1.87.28-7.56.25-4.85-.03-18.75.19-18.75.19s-11.62.04-14.65-.09c-6.05-.25-17.59-.1-17.59-.1l-16.12-.1s-18-.33-24.9-.15c-8.64.22-16.95.2-25.6.5-10.81.38-23.66-.23-34.54.14-6.3.22-17.1-.1-23.44-.14-10.27-.06-22.62.16-32.88.14-19.71-.02-23.62-.42-43.29 0-24.12-.58-35.26-.14-51.96-.14-8.8 0-23.27-.5-36.46 0m.52-.46c-.73-2.94.95-4.75 0-7.7-1.2-3.69.48-8.08-.72-11.78a18.4 18.4 0 0 1-.76-6.35c13.36 0 25.7.14 34.49.3 17.5.3 26.71-.04 51.26-.04 19.67-.42 24.28.15 44 .17 10.25.02 17.6-.32 27.88-.26 6.34.03 19.25.21 25.56 0a646.4 646.4 0 0 1 33.87-.11c13.2 0 20.4-.35 29.14-.27 6.65.06 16.9.06 16.9.06l23.46.3s5.31-.11 12.16-.11c3.96-.19 16.45.1 16.45.1s15.78-.43 20.63-.4l11.19.05c-.46 3.08-1.03 4.33-.08 7.28 1.19 3.69-.48 8.08.71 11.78.7 2.15.06 5.13 0 7.3'/%3e%3c/svg%3e");
+
+	mask: var(--mask-url) top left / auto 100%  no-clip;
+
+	-webkit-mask-box-image: var(--mask-url) 5;
+	-webkit-mask-box-image-outset: 1px;
+
+}
+
+/* Blink & Webkit */
+@supports not ( mask-clip: no-clip ) {
+	.wp-site-blocks button:focus-visible,
+	.wp-element-button:focus-visible,
+	.wp-site-blocks .button:focus-visible,
+	.wp-site-blocks input[type="button"]:focus-visible,
+	.wp-site-blocks input[type="submit"]:focus-visible,
+	.wp-site-blocks input[type="reset"]:focus-visible,
+	.wp-site-blocks ::file-selector-button:focus-visible,
+	.wp-block-button > .wp-block-button__link:focus-visible {
+		-webkit-mask-box-image: none;
+	}
 }
 
 .wp-site-blocks .button:hover,
@@ -256,6 +284,8 @@ body .is-layout-constrained > .alignleft {
 
 .wp-block-avatar__image {
 	-webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='31' fill='none' viewBox='0 0 32 31'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M29.689 1.941c-1.987.188-7.166-.157-7.166-.157l-4.637-.101s-3.32.158-5.058-.11c-.874-.136-4.215-.093-4.215-.093s-3.998.233-5.395.203c-1.635-.036-.36-.075-1.995-.11-.016 2.286-.068 5.43.131 7.7.344 3.916-.137 8.555.204 12.45.273 3.115.109 4.441-.022 7.69 1.635.036 1.583.024 3.218.06 1.397.03 5.934-.428 5.934-.428s3.595.306 4.733.11c1.97 0 3.5-.11 3.5-.11l6.745.306s2.42 0 4.333.062m-.165-27.517c.209 3.11-.274 5.025 0 8.139.342 3.896-.14 8.535.204 12.45.2 2.27-.024 4.755-.04 7.042'/%3e%3cpath fill='black' d='M1.52 2.163h28.287v26.674H1.52z'/%3e%3c/svg%3e") top left / auto 100%;
+	max-width: 48px;
+	max-height: 48px;
 }
 
 .wp-block-group:empty {
@@ -335,4 +365,16 @@ hr:not(.wp-block-separator.is-style-dots):before,
 .wp-block-navigation .wp-block-navigation__responsive-container-close, .wp-block-navigation  .wp-block-navigation__responsive-container-open {
 	margin: 0;
 	padding: 0;
+	mask: none;
+	-webkit-mask-box-image: none;
 }
+
+/* endregion */
+/* region * * * * * * * * *                        Editor                                * * * * * * * * * * * * */
+
+.edit-post-visual-editor__post-title-wrapper {
+	padding-right: var(--wp--style--root--padding-right);
+	padding-left: var(--wp--style--root--padding-left);
+}
+
+/* endregion */

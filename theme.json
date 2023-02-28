@@ -366,6 +366,9 @@
 			"core/site-title": {
 				"elements": {
 					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--foreground)"
+						},
 						":hover": {
 							"typography": {
 								"textDecoration": "underline"
