@@ -3,11 +3,13 @@ on:
   push:
     tags:
       - "*"
+  workflow_dispatch:
 jobs:
   tag:
     name: New tag
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: WordPress Theme Deploy
         uses: Codeinwp/action-wordpress-theme-deploy@primary
         env:
