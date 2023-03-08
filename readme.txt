@@ -16,6 +16,13 @@ Language support: The theme is built around the Gaegu font, which does not cover
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix focus styles for buttons
+* Fix site title color
+* Fix selected text color in code block
+* Set accent color for form elements
+* Fix post title spacing in the editor
+
 = 1.0.0 =
 * Initial release
 
