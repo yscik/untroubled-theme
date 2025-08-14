@@ -1,6 +1,7 @@
 /.wordpress-org
 /.git
 /.github
+/.codebuddy
 /node_modules
 
 .distignore

@@ -16,6 +16,10 @@ Language support: The theme is built around the Gaegu font, which does not cover
 
 == Changelog ==
 
+= 1.0.2 =
+* Optimize fonts
+* Support WordPress 6.8
+
 = 1.0.1 =
 * Fix focus styles for buttons
 * Fix site title color
